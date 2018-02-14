@@ -6,7 +6,6 @@ var gallery = document.querySelectorAll('.production-gallery img');
 var navLinks = document.querySelectorAll('.nav-links a');
 
 
-
 window.addEventListener('scroll', function () {
     for (var x = 0; x < gallery.length; x++) {
         if (gallery[x].getBoundingClientRect().top < 700) {
@@ -17,16 +16,20 @@ window.addEventListener('scroll', function () {
 });
 
 
+if(window.outerWidth > 768){
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 70) {
+            navBar.classList.add('nav-animation');
+        } else {
+            navBar.classList.remove('nav-animation');
+        }
+    
+    });
+}
 
 burger.addEventListener('click', burgerNavigation);
-window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 70) {
-        navBar.classList.add('nav-animation');
-    } else {
-        navBar.classList.remove('nav-animation');
-    }
 
-});
+
 
 
 function burgerNavigation() {

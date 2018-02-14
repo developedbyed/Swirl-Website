@@ -276,8 +276,9 @@ footer {
       position: relative; }
       .introduction nav #logo .burger {
         z-index: 100;
+        padding: 50px;
         position: absolute;
-        right: 50px;
+        right: 0px;
         cursor: pointer; }
         .introduction nav #logo .burger .line1,
         .introduction nav #logo .burger .line2,
