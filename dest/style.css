@@ -8,8 +8,8 @@ body {
 .introduction {
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  background-image: url("/dest/img/cover-photo.jpeg"), -webkit-gradient(linear, left top, left bottom, from(#1E2D2F), to(#1E2D2F));
-  background-image: url("/dest/img/cover-photo.jpeg"), linear-gradient(#1E2D2F, #1E2D2F);
+  background-image: url("./img/cover-photo.jpeg"), -webkit-gradient(linear, left top, left bottom, from(#1E2D2F), to(#1E2D2F));
+  background-image: url("./img/cover-photo.jpeg"), linear-gradient(#1E2D2F, #1E2D2F);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: screen; }
