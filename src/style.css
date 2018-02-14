@@ -3,13 +3,14 @@
   margin: 0; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 100%; }
 
 .introduction {
   max-width: 100%;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  background-image: url("/dest/img/cover-photo.jpeg"), linear-gradient(#1E2D2F, #1E2D2F);
+  background-image: url("./../dest/img/cover-photo.jpeg"), linear-gradient(#1E2D2F, #1E2D2F);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: screen; }
