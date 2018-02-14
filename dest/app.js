@@ -5,6 +5,8 @@ var navBar = document.querySelector('nav');
 var gallery = document.querySelectorAll('.production-gallery img');
 var navLinks = document.querySelectorAll('.nav-links a');
 
+
+
 window.addEventListener('scroll', function () {
     for (var x = 0; x < gallery.length; x++) {
         if (gallery[x].getBoundingClientRect().top < 700) {
@@ -32,4 +34,5 @@ function burgerNavigation() {
     burger.getElementsByTagName('div')[0].classList.toggle('line1-animate');
     burger.getElementsByTagName('div')[1].classList.toggle('line2-animate');
     burger.getElementsByTagName('div')[2].classList.toggle('line3-animate');
+
 }

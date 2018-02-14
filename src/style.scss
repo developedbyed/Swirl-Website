@@ -9,6 +9,7 @@ body {
 }
 
 .introduction {
+    max-width: 100%;
     font-family: $mainFont;
     min-height: 100vh;
     background-image: url('/dest/img/cover-photo.jpeg'), linear-gradient(#1E2D2F, #1E2D2F);
@@ -23,6 +24,7 @@ body {
         min-height: 5vh;
     }
     nav {
+        width: 100%;
         z-index: 10;
         transition: all 0.5s;
         display: flex;
@@ -171,7 +173,7 @@ body {
 }
 
 .membership {
-    min-height: 80vh;
+    min-height: 70vh;
     .member-title {
         font-family: $mainFont;
         min-height: 30vh;
@@ -220,6 +222,12 @@ footer {
         nav {
             height: 70px;
             flex-wrap: wrap;
+            .nav-animation {
+                background-color: #27ae60;
+                border: none;
+                position: fixed;
+                width: 100%;
+            }
             #logo {
                 display: flex;
                 align-items: center;
@@ -267,7 +275,7 @@ footer {
                 right: 0;
                 top: 0;
                 background-color: #27ae60;
-                min-height: 70vh;
+                min-height: 30vh;
                 width: 0%;
                 text-align: center;
                 opacity: 0;
@@ -330,15 +338,16 @@ footer {
         }
         .offer-box {
             margin: 0;
-            height: 60vh;
+            height: 70vh;
             flex-direction: column;
             justify-content: space-around;
             display: flex;
         }
     }
     .membership {
+        
         .member-title {
-            min-height: 30vh;
+            min-height: 50vh;
             font-family: $mainFont;
             display: flex;
             flex-direction: column;
