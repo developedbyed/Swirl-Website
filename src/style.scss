@@ -222,6 +222,7 @@ footer {
         nav {
             height: 70px;
             flex-wrap: wrap;
+            
             .nav-animation {
                 background-color: #27ae60;
                 border: none;
@@ -276,7 +277,7 @@ footer {
                 top: 0;
                 background-color: #27ae60;
                 min-height: 30vh;
-                width: 0%;
+                width: 100%;
                 text-align: center;
                 opacity: 0;
                 transition: all 0.5s;
