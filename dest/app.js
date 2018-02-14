@@ -4,7 +4,6 @@ var burgerLines = document.querySelector('.burger');
 var navBar = document.querySelector('nav');
 var gallery = document.querySelectorAll('.production-gallery img');
 var navLinks = document.querySelectorAll('.nav-links a');
-console.log(gallery);
 
 window.addEventListener('scroll', function () {
     for (var x = 0; x < gallery.length; x++) {
