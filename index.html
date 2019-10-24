@@ -10,13 +10,26 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="./dest/style.css">
     <title>Swirl</title>
+    <style>
+        .splitting .char {
+            animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+            animation-delay: calc(60ms * var(--char-index));
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="introduction">
         <nav>
             <div id="logo">
-                <h1>Swirl</h1>
+                <h1 data-splitting>Swirl</h1>
                 <svg version="1.1" id="swirlSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="40px" height="30px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
                     <g>
@@ -152,6 +165,10 @@
 
     <script src="./dest/zenscroll-min.js"></script>
     <script src="./dest/app.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        Splitting();
+    </script>
 </body>
 
 </html>
